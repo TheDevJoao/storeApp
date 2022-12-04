@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
 class SignupPage extends StatelessWidget {
@@ -12,9 +11,8 @@ class SignupPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: Color(0xFFF5F5F5),
           padding: EdgeInsets.only(
-            top: 60,
+            top: 10,
             left: 20,
             right: 20,
             bottom: 40,
@@ -23,7 +21,7 @@ class SignupPage extends StatelessWidget {
             children: [
               Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Theme.of(context).colorScheme.secondary,
                   // ignore: prefer_const_literals_to_create_immutables
                   boxShadow: [
                     BoxShadow(
@@ -31,7 +29,7 @@ class SignupPage extends StatelessWidget {
                       offset: Offset(1, 2.0),
                       blurRadius: 5,
                       spreadRadius: 2,
-                    )
+                    ),
                   ],
                 ),
                 child: Padding(
@@ -46,10 +44,7 @@ class SignupPage extends StatelessWidget {
                     children: [
                       Text(
                         "Sign up",
-                        style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.w500,
-                        ),
+                        style: Theme.of(context).textTheme.displaySmall,
                       ),
                       SizedBox(height: 40),
                       TextFormField(
@@ -58,14 +53,14 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Name",
                           labelStyle: TextStyle(
-                            color: Colors.black,
+                            color: Theme.of(context).primaryColor,
                             fontWeight: FontWeight.w400,
                             fontSize: 16,
                           ),
                         ),
                         style: TextStyle(
                           fontSize: 20,
-                          color: Colors.black,
+                          color: Theme.of(context).primaryColor,
                         ),
                       ),
                       TextFormField(
@@ -73,14 +68,14 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "E-mail",
                           labelStyle: TextStyle(
-                            color: Colors.black,
+                            color: Theme.of(context).primaryColor,
                             fontWeight: FontWeight.w400,
                             fontSize: 16,
                           ),
                         ),
                         style: TextStyle(
                           fontSize: 20,
-                          color: Colors.black,
+                          color: Theme.of(context).primaryColor,
                         ),
                       ),
                       SizedBox(height: 10),
@@ -90,14 +85,14 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Password",
                           labelStyle: TextStyle(
-                            color: Colors.black,
+                            color: Theme.of(context).primaryColor,
                             fontWeight: FontWeight.w400,
                             fontSize: 16,
                           ),
                         ),
                         style: TextStyle(
                           fontSize: 20,
-                          color: Colors.black,
+                          color: Theme.of(context).primaryColor,
                         ),
                       ),
                       SizedBox(
@@ -106,7 +101,7 @@ class SignupPage extends StatelessWidget {
                       Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.indigo,
+                          color: Theme.of(context).primaryColor,
                           borderRadius: BorderRadius.all(
                             Radius.circular(10),
                           ),
